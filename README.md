@@ -11,7 +11,7 @@ This repository contains the artifacts for the paper titled "P4Control: Line-Rat
 - Scapy 2.4.5
 
 ## Setup
-Current configurations consider three hosts are connected to the Tofino switch with the following IP addresses and labels (feel free to adjust these configurations as per your topology)
+Current settings assume three hosts are linked to the Tofino switch, each assigned with the following IP addresses and labels. (feel free to adjust these settings as per your topology)
 - ```Host1```, 10.0.0.1, Label={HOST1}
 - ```Host2```, 10.0.0.2, Label={HOST2}
 - ```Host3```, 10.0.0.3, Label={HOST3}
