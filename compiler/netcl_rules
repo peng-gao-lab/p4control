@@ -1,0 +1,7 @@
+if match(pktlabel contains 0x01 && IP == "10.0.0.3") then drop
+
+if match(pktlabel contains 0x02 && IP == "10.0.0.3") then allow
+
+if match(pktlabel contains 0x01 && IP == "10.0.0.2") then allow
+
+if match(pktlabel contains 0x02 && IP == "10.0.0.1") then allow
