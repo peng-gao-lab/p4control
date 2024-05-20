@@ -114,11 +114,10 @@ python3 custom-send.py <destination_IP> <label> <tracker> <message>
 If you like or use our work, please cite us using:
 
 ```
-@INPROCEEDINGS {bajaber2024p4control,
-author = {O. Bajaber and B. Ji and P. Gao},
-title = {P4Control: Line-Rate Cross-Host Attack Prevention via In-Network Information Flow Control Enabled by Programmable Switches and eBPF},
-booktitle = {IEEE Symposium on Security and Privacy (S\&P)},
-year = {2024},
-pages = {146-146},
+@inproceedings{bajaber2024p4control,
+  title={P4Control: Line-Rate Cross-Host Attack Prevention via In-Network Information Flow Control Enabled by Programmable Switches and eBPF},
+  author={Bajaber, Osama and Ji, Bo and Gao, Peng},
+  booktitle={IEEE Symposium on Security and Privacy (SP)},
+  year={2024},
 }
 ```
