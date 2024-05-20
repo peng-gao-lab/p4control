@@ -19,7 +19,7 @@ Current settings assume three hosts are linked to the Tofino switch, each assign
 ## How to use
 
 ### Run P4 Switch program
-Make sure you have installed the Tofino switch SDE and set the environment variables ```SDE=~/bf-sde-9.7.0/``` and ```SDE_INSTALL=~/bf-sde-9.7.0/install```
+Ensure that the Tofino switch SDE is installed and set the environment variables `SDE=~/bf-sde-9.7.0/` and `SDE_INSTALL=~/bf-sde-9.7.0/install`. Note: The `p4_build.sh` and `run_switchd.sh` scripts can be found within your SDE directory `/bf-sde-9.7.0/`.
 
 Step 1: Build the P4 program
 ```
@@ -89,9 +89,14 @@ Step 1: Run the following command
 ./netcl-compile -i <netcl_rules> -o <compiled_rules>
 ```
 
+Step 2: To add the compiled rules to the switch, copy the content of ```<compiled_rules>``` to ```switch/netcl.py``` and re-run the control plane script
+```
+python3 switch/controller.py
+```
+
 ### Run custom tools
 
-To use the custom tools to send and receive customized packets with DIFC headers
+We provide custom Scapy tools to send and receive customized packets with DIFC headers. These tools can be used to generate synthetic traffic to test the switch configurations
 
 Step 1: At the receiving host, run the following to start sniffing packets
 ```
