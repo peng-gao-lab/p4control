@@ -100,7 +100,7 @@ python3 custom-receive.py
 
 Step 2: At the sending host, run the following command to send the custom packet
 ```
-python3 custom-receive.py <destination_IP> <label> <tracker> <message>
+python3 custom-send.py <destination_IP> <label> <tracker> <message>
 ```
 
 
